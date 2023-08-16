@@ -1,0 +1,233 @@
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/SFPRODISPLAYREGULAR.woff);
+    font-weight: normal;
+  }
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/SFPRODISPLAYMEDIUM.woff);
+    font-weight: medium;
+  }
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/SFPRODISPLAYBOLD.woff);
+    font-weight: bold;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myFirstFont;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+/* Common CSS */
+body{
+  background-color: #f7f4ef;
+}
+.container{
+  width: 90%;
+  margin: auto;
+ }
+ .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+p{
+  color: #000000;
+}
+h2.title{
+  font-size: 48px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+
+}
+span.pink{
+  color: #f22a5d;
+}
+.row.d-flex{
+  display: flex;
+}
+
+/* Grid Making  */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.col-6 {width: 50%;}
+ 
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+.credit-img img,.money-img img, .guidance-img img{
+  width: 100%;
+}
+.mobile-img{
+  display: none;
+}
+/* Hero section */
+.hero-img img {
+  width: 95%;
+}
+
+.brand-logo{
+    text-align: right;
+}
+
+.hero-text p{
+  font-size: 21px;
+  margin-bottom: 20px;
+
+}
+span.bold{
+  font-weight: bold;
+}
+
+.btn{
+  display: flex;
+  margin-bottom: 20px;
+}
+.btn-left img{
+  border-radius: 5px;
+  box-shadow: 11px 10px #d2fd33;
+}
+.btn-right img{
+  border-radius: 5px;
+  margin-left: 20px;
+  box-shadow: 11px 10px #395a01;
+}
+.hero-text p.bottom-text{
+  font-size: 12px;
+}
+.hero-text {
+  padding-left: 20px;
+}
+
+.brands .container p{
+ font-size: 13px; 
+ margin-bottom: 10px;
+ text-align: left;
+}
+
+.brands-logo{
+  background-color: #d2fd33;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.brands p{
+  text-align: right;
+  font-weight: medium;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+
+.money-text h2{
+  margin-bottom: 60px;
+  margin-left: 80px;
+  padding-right: 100px;
+}
+.category{
+  display: flex;
+  margin-bottom: 30px;
+}
+.cat-img{
+  min-width: 60px;
+   
+}
+.cat-text{
+  margin-left: 30px;
+}
+.cat-text h3{
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cat-text p {
+  margin-bottom: 20px;
+}
+.cat-text p {
+    margin-bottom: 20px;
+}
+
+/* Credit */
+.credit-sec{
+  padding: 30px 0;
+}
+.credit-text {
+  padding-left: 40px;
+}
+.credit-text h2{
+   margin-bottom: 60px;
+   margin-left: 80px;
+}
+.cat-text a {
+  color: #f22a5d;
+  margin-top: -15px;
+  display: block;
+}
+
+/* guidance-sec */
+
+.guidance-sec{
+  padding: 80px 0;
+}
+.guidance-text {
+  padding-right:80px;
+}
+
+.guidance-text h2{
+ margin-bottom: 50px;
+ margin-left: 80px;
+}
+/* download */
+
+.download-sec{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.download-sec img{
+  width: 80%;
+  margin: auto;
+}
+/* Footer */
+footer{
+  background: #ded8ca;
+  padding: 30px 0;
+}
+
+footer ul{
+  text-align: center;
+}
+footer ul li{
+  display: inline-block;
+  margin: 0 30px;
+}
+
+footer ul li a{
+  display:block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+footer ul li p{
+   font-size: 13px;
+ 
+}
