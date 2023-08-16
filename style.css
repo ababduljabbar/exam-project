@@ -1,4 +1,6 @@
 
+/* Fonts */
+
 @font-face {
     font-family: myFirstFont;
     src: url(font/SFPRODISPLAYREGULAR.woff);
@@ -14,6 +16,9 @@
     src: url(font/SFPRODISPLAYBOLD.woff);
     font-weight: bold;
   }
+
+/* Reset CSS */
+
 *{
     margin: 0;
     padding: 0;
@@ -29,6 +34,7 @@ li{
 
 
 /* Common CSS */
+
 body{
   background-color: #f7f4ef;
 }
@@ -57,6 +63,12 @@ span.pink{
 .row.d-flex{
   display: flex;
 }
+.credit-img img,.money-img img, .guidance-img img{
+  width: 100%;
+}
+.mobile-img{
+  display: none;
+}
 
 /* Grid Making  */
 
@@ -73,13 +85,8 @@ span.pink{
     padding: 15px;
   }
 
-.credit-img img,.money-img img, .guidance-img img{
-  width: 100%;
-}
-.mobile-img{
-  display: none;
-}
 /* Hero section */
+
 .hero-img img {
   width: 95%;
 }
@@ -117,6 +124,7 @@ span.bold{
   padding-left: 20px;
 }
 
+/* Brands section */
 .brands .container p{
  font-size: 13px; 
  margin-bottom: 10px;
@@ -137,12 +145,16 @@ span.bold{
   margin-right: 10px;
 }
 
+/* Money section */
 
 .money-text h2{
   margin-bottom: 60px;
   margin-left: 80px;
   padding-right: 100px;
 }
+
+/* common category section */
+
 .category{
   display: flex;
   margin-bottom: 30px;
@@ -168,6 +180,7 @@ span.bold{
 }
 
 /* Credit */
+
 .credit-sec{
   padding: 30px 0;
 }
