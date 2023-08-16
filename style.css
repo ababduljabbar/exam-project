@@ -200,13 +200,22 @@ span.bold{
 /* download */
 
 .download-sec{
-  text-align: center;
+  width: 80%;
+  position: relative;
+  margin: auto;
   margin-bottom: 50px;
 }
-.download-sec img{
-  width: 80%;
-  margin: auto;
+.download-sec .bg-img img{
+  width: 100%;
 }
+.download-sec .inner-img img{
+  width: 30%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 /* Footer */
 footer{
   background: #ded8ca;
